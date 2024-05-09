@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary-color: #e06951;
+  --text-dark: #111827;
+  --text-light: #6b7280;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+/***** General Rules  *****/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url(assets/header-bg.png);
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: flex;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+.section_container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section_subheader {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-light);
+  text-align: center;
+}
+.section_header {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3.75rem;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.logo span {
+  color: var(--primary-color);
+}
+/***** nav *****/
+nav {
+  position: fixed;
+  isolation: isolate;
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  z-index: 9;
+}
+
+.nav_header {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--text-dark);
+}
+.nav_logo .logo {
+  color: var(--white);
+}
+.nav_menu_btn {
+  font-size: 1.5rem;
+  color: var(--white);
+  cursor: pointer;
+}
+.nav_links {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  /* list-style: none; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--text-dark);
+  transition: 0.3s;
+  z-index: -1;
+  /* transform: translateY(-100%); */
+}
+
+.nav_links.open {
+  transform: translateY(0);
+}
+
+.nav_links a{
+  font-weight: 500;
+  white-space: nowrap;
+  color: var(--white);
+}
+.nav_links a:hover{
+  color: var(--primary-color);
+}
