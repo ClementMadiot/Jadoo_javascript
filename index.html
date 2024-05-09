@@ -1,53 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Design | Travel.Io</title>
-  <link rel="stylesheet" href="style.css">
-  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-</head>
-<body>
-  <nav>
-    <div class="nav_header">
-      <div class="nav_logo">
-        <a href="#" class="logo">Jad<span>oo</span>.</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Design | Travel.Io</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav_header">
+        <div class="nav_logo">
+          <a href="#" class="logo">Jad<span>oo</span>.</a>
+        </div>
+        <div class="nav_menu_btn" id="menuBtn">
+          <i class="ri-menu-line"></i>
+        </div>
       </div>
-      <div class="nav_menu_btn" id="menuBtn">
-        <i class="ri-menu-line"></i>
-      </div>
-    </div>
-    <ul class="nav_links" id="navLinks">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Destinations</a></li>
-      <li><a href="#">Trips</a></li>
-      <li><a href="#">Clients</a></li>
-    </ul>
-  </nav>
+      <ul class="nav_links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Trips</a></li>
+        <li><a href="#">Clients</a></li>
+      </ul>
+    </nav>
 
-  <header class="section_container header_container" id="home">
-    <div class="header_image">
-      <img src="assets/header.png" alt="header">
-    </div>
-    <div class="header_content">
-      <h2>best destinations around the world</h2>
-      <h1>Travel, enjoy and live a new and full life</h1>
-      <p>It's an invitation to break free from the ordinary, immerse yourself in diverse cultures, and embrace the beauty of the world around you. Let every journey be a chapter in your story of living life to its fullest potential.</p>
-    </div>
-    <div class="header_btns">
-      <button class="btn">Find out more</button>
-      <a href="#">
-        <span><i class="ri-play-fill"></i></span>
-        Play Demo
-      </a>
-    </div>
-    
-  </header>
-  
-  <script src="scrypt.js"></script>
-</body>
+    <header class="section_container header_container" id="home">
+      <div class="header_image">
+        <img src="assets/header.png" alt="header" />
+      </div>
+      <div class="header_content">
+        <h3>best destinations around the world</h3>
+        <h1>Travel, enjoy and live a new and full life</h1>
+        <p>
+          It's an invitation to break free from the ordinary, immerse yourself
+          in diverse cultures, and embrace the beauty of the world around you.
+          Let every journey be a chapter in your story of living life to its
+          fullest potential.
+        </p>
+      </div>
+      <div class="header_btns">
+        <button class="btn">Find out more</button>
+        <a href="#">
+          <span><i class="ri-play-fill"></i></span>
+          Play Demo
+        </a>
+      </div>
+    </header>
+
+    <section class="section_container service_container" id="service">
+      <h3>category</h3>
+      <h2 class="section_header">We offer Best Services</h2>
+      <div class="service_grid">
+        <!-- first card  -->
+        <div class="service_card">
+          <img src="assets/weather.png" alt="service of weather" />
+          <h4>calculater weather</h4>
+          <p>
+            Stay ahead of your travels with precise weather forecasts tailored
+            to your destination's conditions.
+          </p>
+        </div>
+
+        <!-- second card  -->
+
+        <!-- <div class="service_card">
+          <img src="assets/plane.png" alt="service of plane">
+          <h4>best flights</h4>
+          <p>Unlock your exclusives access to optimal flight options curated to match your preferences and budget.</p>
+        </div> -->
+
+        <!-- third card  -->
+
+        <!-- <div class="service_card">
+          <img src="assets/event.png" alt="service of event">
+          <h4>local events</h4>
+          <p>Immerse yourself in the pulse of your destination with insight into local events and happenings within travel.</p>
+        </div> -->
+
+        <!-- Fourth card  -->
+
+        <!-- <div class="service_card">
+          <img src="assets/customisation.png" alt="service-customizations">
+          <h4>customization</h4>
+          <p>Tailor your journey with personalized customizations, ensuring every detail reflects your unique travel style.</p>
+        </div> -->
+      </div>
+    </section>
+
+    <script src="scrypt.js"></script>
+  </body>
 </html>
