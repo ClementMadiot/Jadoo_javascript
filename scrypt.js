@@ -37,11 +37,11 @@ sr.reveal('h1', {
 })
 sr.reveal('.header_presentation p', {
   ...ScrollRevealOption,
-  delay: 900,
+  delay: 1000,
 })
 sr.reveal('.header_btns', {
   ...ScrollRevealOption,
-  delay: 1100,
+  delay: 1300,
 })
 //: Service 
 sr.reveal('.service_card', {
@@ -52,4 +52,23 @@ sr.reveal('.service_card', {
 sr.reveal('.destination_card', {
   ...ScrollRevealOption,
   interval: 300,
+})
+//: Trip 
+sr.reveal('.trip_image img', {
+  ...ScrollRevealOption,
+  origin: 'right',
+})
+sr.reveal('.trip_content h3', {
+  ...ScrollRevealOption,
+  delay: 400,
+})
+sr.reveal('.trip_content h2', {
+  ...ScrollRevealOption,
+  delay: 700,
+})
+
+sr.reveal('.trip_list li', {
+  ...ScrollRevealOption,
+  delay: 1000,
+  interval: 300
 })
