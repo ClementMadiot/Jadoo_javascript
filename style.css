@@ -6,6 +6,7 @@
   --text-light: #6b7280;
   --white: #ffffff;
   --btn-bg: #f1a501;
+  --box-shadow-cd: rgba(0, 0, 0, 0.1);
   --max-width: 1200px;
 }
 /***** General Rules  *****/
@@ -53,13 +54,24 @@ h2, h3 {
   font-weight: 500;
   color: var(--text-light);
   text-align: center;
+}
+h2{
+  text-transform: capitalize;
+}
+h3{
   text-transform: uppercase;
 }
 h4{
   text-transform: capitalize;
+  font-weight: 500;
+  color: var(--text-light);
+  font-size: 1.2rem;
 }
 p {
   color: var(--text-light);
+}
+h1, h2, h3, h4,h5,p{
+  cursor: default;
 }
 .section_container {
   max-width: var(--max-width);
@@ -83,7 +95,7 @@ p {
 .logo span {
   color: var(--primary-color);
 }
-/***** nav *****/
+/***** Nav *****/
 nav {
   position: fixed;
   isolation: isolate;
@@ -211,7 +223,7 @@ nav {
 }
 
 .service_card:hover{
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 30px var(--box-shadow-cd);
 }
 .service_card img{
   margin-bottom: 2rem;
@@ -224,8 +236,63 @@ nav {
   font-weight: 600;
   color: var(--text-dark);
 }
+.service_card p{
+  color: var(--text-dark);
+}
+/**** Destination Card  ****/
+.destination_grid{
+  margin-top: 4rem;
+  display: grid;
+  gap: 1rem;
+}
 
-/***** Responsive  *****/
+.destination_card{
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 10px 10px 30px var(--box-shadow-cd);
+}
+
+.destination_details{
+  padding: 1rem 1.5rem;
+}
+.destination_details > div {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.destination_details p{
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 1rem;
+}
+
+.destination_details p span{
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  transform: rotateY(180deg);
+}
+
+
+/***** Responsive Ipad  *****/
+@media (width > 540px){
+  /*/ service  /*/
+  .service_grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  /*/ destination  /*/
+  .destination_grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/***** Responsive Desktop  *****/
 @media (width > 768px) {
   /*/ Nav  */
   nav {
@@ -272,5 +339,30 @@ nav {
   }
   .header_btns {
     justify-content: flex-start;
+  }
+
+  /*/ service card  /*/
+  .service_grid{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  /*/ destination  /*/
+.destination_grid{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/***** Responsive Large Screen  *****/
+  @media (width>1024px){
+  /*/ service card  /*/
+    .service_grid{
+      gap: 2rem;
+    }
+    .service_card{
+      padding: 2rem;
+    }
+
+  /*/ destination  /*/
+.destination_grid{
+  gap: 2rem;
+}
   }
 }
