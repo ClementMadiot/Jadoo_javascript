@@ -9,6 +9,10 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!--* NAV  *-->
@@ -109,7 +113,7 @@
           <div class="destination_details">
             <div>
               <h4>Rome, Italy</h4>
-              <h4>$5.42k</h4>
+              <h5>$5.42k</h5>
             </div>
             <p>
               <span><i class="ri-navigation-fill"></i></span>
@@ -123,7 +127,7 @@
           <div class="destination_details">
             <div>
               <h4>London, UK</h4>
-              <h4>$4.2k</h4>
+              <h5>$4.2k</h5>
             </div>
             <p>
               <span><i class="ri-navigation-fill"></i></span>
@@ -137,7 +141,7 @@
           <div class="destination_details">
             <div>
               <h4>Full, Europe</h4>
-              <h4>$15k</h4>
+              <h5>$15k</h5>
             </div>
             <p>
               <span><i class="ri-navigation-fill"></i></span>
@@ -151,40 +155,102 @@
     <!--* TRIP  *-->
     <section class="section_container" id="trip">
       <div class="trip_image">
-        <img src="assets/trip.png" alt="trip">
+        <img src="assets/trip.png" alt="trip" />
       </div>
       <div class="trip_content">
         <h3>ease & fast</h3>
         <h2>book your next trip in 3 easy steps</h2>
         <ul class="trip_list">
-
           <li class="trip_icons">
             <span><i class="ri-signpost-line"></i></span>
 
             <div class="trip_conditions">
               <h4>choose destination</h4>
-              <p>Choose your dream destination from our curated selection of exotic locales, bustling cities and serene getaways.</p>
+              <p>
+                Choose your dream destination from our curated selection of
+                exotic locales, bustling cities and serene getaways.
+              </p>
             </div>
           </li>
           <li class="trip_icons">
             <span><i class="ri-secure-payment-line"></i></span>
             <div class="trip_conditions">
               <h4>make payment</h4>
-              <p>Secure your adventure with ease through our stramlined payment process, ensuring a hassle-free booking experiences.</p>
+              <p>
+                Secure your adventure with ease through our stramlined payment
+                process, ensuring a hassle-free booking experiences.
+              </p>
             </div>
           </li>
           <li class="trip_icons">
             <span><i class="ri-flight-takeoff-line"></i></span>
             <div class="trip_conditions">
               <h4>reach airport on selected date</h4>
-              <p>Prepare for takeoff as you finalize your travel plans, arriving at the airport on your selected date ready to embark on your next unforgettable journey.</p>
+              <p>
+                Prepare for takeoff as you finalize your travel plans, arriving
+                at the airport on your selected date ready to embark on your
+                next unforgettable journey.
+              </p>
             </div>
           </li>
         </ul>
       </div>
     </section>
 
+    <!--* Client  *-->
+    <section class="section_container" id="client">
+      <div class="client_content">
+        <h3>testimonials</h3>
+        <h2>what people say about us</h2>
+      </div>
+      <div class="client_swiper">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+
+            <!-- first client  -->
+            <div class="swiper-slide">
+              <div class="client_card">
+                <img src="assets/client-1.jpg" alt="client">
+                <div class="client_card_content">
+                  <p>Booking my trips through this platform has been a game-changer ! From the intuitive interface to the seamless booking process, I've never felt more excited to explore new destinations.</p>
+                  <h4>emily watson</h4>
+                  <h5>travel enthusiast</h5>
+                </div>
+              </div>
+            </div>
+
+              <!-- second client  -->
+              <div class="swiper-slide">
+                <div class="client_card">
+                  <img src="assets/client-2.jpg" alt="client">
+                  <div class="client_card_content">
+                    <p>As a busy professional, time is of the essence. This website made planning my vacation a breeze, allowing me to focus on what matters most: makjing memories with my family</p>
+                    <h4>david nguyen</h4>
+                    <h5>business executive</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- third client  -->
+              <div class="swiper-slide">
+                <div class="client_card">
+                  <img src="assets/client-3.jpg" alt="client">
+                  <div class="client_card_content">
+                    <p>I've been using this service for years and it never disappoints. The convenience of booking my flights, accommodations and activities all in one place saves me time and stress trip.</p>
+                    <h4>micheal johnson</h4>
+                    <h5>frequent flyer</h5>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scrypt.js"></script>
   </body>
 </html>
