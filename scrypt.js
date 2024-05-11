@@ -72,3 +72,23 @@ sr.reveal('.trip_list li', {
   delay: 1000,
   interval: 300
 })
+//: Client 
+sr.reveal('#client h3', {
+  ...ScrollRevealOption,
+})
+
+sr.reveal('#client h2', {
+  ...ScrollRevealOption,
+  delay: 300,
+})
+
+const swiper = new Swiper('.swiper', {
+  direction:'vertical',
+  autoHeight:true,
+  SlidesPerView:1,
+})
+//: Client 
+sr.reveal('.footer_col', {
+  ...ScrollRevealOption,
+  interval: 300,
+})
