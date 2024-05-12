@@ -165,6 +165,14 @@ function displayTrip(trip) {
 }
 displayTrip(tripArray)
 
+//** Swipper JS  **/
+
+const swiper = new Swiper('.swiper', {
+  direction: 'vertical',
+  autoHeight: true,
+  SlidesPerView: 1,
+})
+
 //** ScrollReveal  **/
 
 //: Header
@@ -223,11 +231,6 @@ sr.reveal('#client h3', {
 sr.reveal('#client h2', {
   ...ScrollRevealOption,
   delay: 300,
-})
-const swiper = new Swiper('.swiper', {
-  direction: 'vertical',
-  autoHeight: true,
-  SlidesPerView: 1,
 })
 //: Client
 sr.reveal('.footer_col', {
