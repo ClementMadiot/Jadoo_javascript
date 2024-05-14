@@ -178,7 +178,7 @@ const swiper = new Swiper('.swiper', {
 //: Header
 sr.reveal('.header_image img', {
   ...ScrollRevealOption,
-  origin: 'right',
+  origin: 'bottom',
 })
 sr.reveal('.header_presentation h3', {
   ...ScrollRevealOption,
@@ -206,10 +206,10 @@ sr.reveal('.destination_card', {
   ...ScrollRevealOption,
   interval: 300,
 })
-//: Trip
+// //: Trip
 sr.reveal('.trip_image img', {
   ...ScrollRevealOption,
-  origin: 'right',
+  origin: 'bottom',
 })
 sr.reveal('.trip_content h3', {
   ...ScrollRevealOption,
