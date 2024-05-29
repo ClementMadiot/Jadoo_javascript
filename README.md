@@ -3,7 +3,7 @@ The website is a loading page serves as a travel booking.
 
 Website Preview : https://web-design-jadoo.netlify.app/
 
-# Framework Javascript
+# Librairy Javascript
 
 ## ScrollReveal
 I use ScrollReveal to add a touch of dynamism, gracefully unveiling some component as users load the site.
